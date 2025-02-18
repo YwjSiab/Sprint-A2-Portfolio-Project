@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang=”en”>
+<head>
+<meta charset=”utf-8” />
+<meta name="Viewport" content="width=device-width, initial-scale=1" />
+<title>Contact</title>
+<link href="main.css" rel="stylesheet" />
+<script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <aside>
+            <nav>
+                <ul>
+                    <h2><asideText>Links to My</asideText></h2>
+                        <li><a href="index.html"><strong>Home</strong></a></li>
+                        <li><a href="Resume.html">Resume</a></li>
+                        <li><a href="Projects.html">Projects</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </aside> 
+    </header>
+
+<h1>My Contact</h1>
+    <Address>
+        <li> You can contact me through my Email:<a href=”mailto:vajywjsiab@gmail.com”> vajywjsiab@gmail.com </a></li>
+        <li> My Phone Number: <a href=”tel:+17155715751”> (715)-571-5751</a></li>
+    </Address>
+    <form id="business" action="http://www.example.com/vajywjsiab/businessinfo" method="post">
+    <fieldset id="businessinfo">
+        <legend>Your Business Information</legend>
+        <div class="formrow">
+            <label for="name">Company Name</label>
+            <input name="businessinfo" id="name" type="text" placeholder="Ex: Walmart" required />
+        </div>
+
+        <div class="formrow">
+            <label for="firstname">Contact First Name</label>
+            <input name="businessinfo" id="firstname" type="text" placeholder="first name" required />
+        </div>
+
+        <div class="formrow">
+            <label for="lastname">Contact Last Name</label>
+            <input name="businessinfo" id="lastname" type="text" placeholder="last name" required />
+        </div>
+
+        <div class="formRow">
+            <label for="city">City*</label>
+            <input name="businessCity" id="city" type="text" value="Charlotte" />
+            </div>
+
+            <div class="formRow">
+                <label for="state">State*</label>
+                <input name="businessState" id="state" type="text" value="NC" />
+                </div>
+
+                <div class="formRow">
+                    <label for="zip">Postal code*</label>
+                    <input name="businessZip" id="zip" type="text" placeholder="nnnnn (-nnnn)" pattern="^\d{5}(-\d{4})?$" />
+                    </div>
+
+            <div class="formRow">
+                <label for="phone">Phone number*</label>
+                <input name="businessPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn" pattern="^\d{10}$|^(\(\d{3}\)\)s*)?\d{3}[\s-]?\d{4}$" />
+                </div>
+        
+        <div class="formRow">
+            <label for="mail">E-mail*</label>
+            <input name="businessEmail" id="email" type="email" required />
+        </div>
+
+        <label for="commBox">Add a Comment.</label>
+            <textarea name="custExp" id="commBox"></textarea>
+
+    </fieldset>
+
+    <div id="buttons">
+        <input type="submit" value="Sumbit My Business Information" />
+        <input type="reset" value="Cancel" />
+     </div>
+    </form>
+
+<footer>
+    <Address>
+        Ywj Siab Vaj &#9830; 2012 Weston Avenue &#9830; Schofield, WI 54476
+    </Address>
+</footer>
+</body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
